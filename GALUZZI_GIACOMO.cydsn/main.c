@@ -16,7 +16,9 @@ int main(void)
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-
+    
+    uint8_t prova = 0;
+    
     for(;;)
     {
         /* Place your application code here. */
