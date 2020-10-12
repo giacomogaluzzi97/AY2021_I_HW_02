@@ -14,7 +14,8 @@
     #define __RGB_LED_DRIVER_H__
     
     #include "cytypes.h"
-    uint8_t state;
+    
+    uint8_t state; //variabile dell stato
     
     typedef struct {
         uint16_t red;
@@ -23,7 +24,7 @@
         uint16_t period_green;
         uint8 wave_red;
         uint8 wave_green;
-    } ChannelsSettings;
+    } ChannelsSettings; //struct che definisce le caratteristiche delle onde r e g
     
     void RGBLed_Start();
     void RGBLed_Stop();

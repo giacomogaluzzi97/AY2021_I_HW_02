@@ -13,26 +13,23 @@
 #include "ISR_PushButton.h"
 #include "RGBLedSettings.h"
 
-/* hey this is the feature test :) */
-
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
     
-    state=0;
+    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     
+    state=0; //stato iniziale
     RGBLed_Start();
     isr_ChangeStatus_StartEx(ISR_PUSH_BUTTON);
-    
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     
     
     for(;;)
     {
         /* Place your application code here. */
         
-        RGBLed_WriteChannelsSettings(setting[state]);
-        CyDelay(100);
+        RGBLed_WriteChannelsSettings(setting[state]); //seleziono il caso 
+        CyDelay(100); //un piccolo delay
         
     }
 }

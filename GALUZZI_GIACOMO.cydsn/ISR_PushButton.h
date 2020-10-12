@@ -15,7 +15,7 @@
     #include "project.h"
     #include "RGBLedDriver.h"
     
-   CY_ISR_PROTO(ISR_PUSH_BUTTON);
+    CY_ISR_PROTO(ISR_PUSH_BUTTON);
 
 #endif
 /* [] END OF FILE */

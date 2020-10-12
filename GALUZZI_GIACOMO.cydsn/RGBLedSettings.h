@@ -19,9 +19,9 @@
  * i periodi delle onde quadre diversi tra loro. 
  * La struttura si basa sulla definizione di 7 diversi
  * stati che si differenziano per le maschere utilizzate
- * (copiate dal datasheet), nonché per i colori che compaiono
- * Per definite le 7 casistiche definisco un array della
- * struttura
+ * (incluse dal datasheet), nonché per i colori che compaiono.
+ * Per definire le 7 casistiche creo un array della
+ * struttura creata nel file del driver del led. 
 */
 #include "PWM_G.h"
 #include "PWM_R.h"
@@ -42,7 +42,6 @@
 #define PWM_G__B_PWM__FIRMWARE 5 
 */
 
-
 ChannelsSettings setting[] = {
     {0, 0, 1999, 1999, 1, 1},
     {0, 999, 1999, 1999, 1, 1},
@@ -52,7 +51,5 @@ ChannelsSettings setting[] = {
     {499, 999, 1999, 1999, 2, 2},
     {999, 499, 1999, 999, 2, 2}
 };
-
-
 
 /* [] END OF FILE */

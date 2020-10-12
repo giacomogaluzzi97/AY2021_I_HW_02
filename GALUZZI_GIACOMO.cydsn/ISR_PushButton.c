@@ -12,13 +12,12 @@
 
 #include "ISR_PushButton.h"
 
-
 CY_ISR_PROTO(ISR_PUSH_BUTTON)
 {
     state=state+1;
     if (state >= 7)
     {
-        state=state-7;
+        state=state-7; //torno allo stato iniziale
     }    
 }
 
